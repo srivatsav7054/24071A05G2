@@ -1,0 +1,134 @@
+.patient-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #fff;
+  padding: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.patient-details-box {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 700px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.patient-details-box h2 {
+  color: #000;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.details-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.details-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.details-section h3 {
+  color: #000;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.detail-item label {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.detail-item p {
+  color: #000;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #000;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.primary-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.secondary-btn {
+  background-color: #666;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.secondary-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}

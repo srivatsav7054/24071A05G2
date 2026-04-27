@@ -1,0 +1,114 @@
+.doctor-list-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  background: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+.doctor-list-container h2 {
+  color: #000;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Oswald', sans-serif;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-header {
+  background: #000;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.doctor-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.doctor-info {
+  padding: 1.5rem;
+}
+
+.doctor-info p {
+  color: #000;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-family: 'Oswald', sans-serif;
+}
+
+.doctor-info strong {
+  color: #000;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+
+.doctor-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Oswald', sans-serif;
+}
+
+.doctor-btn:hover {
+  background-color: #333;
+}
+
+.logout-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Oswald', sans-serif;
+}
+
+.logout-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+}
